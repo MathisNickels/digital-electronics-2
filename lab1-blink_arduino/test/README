@@ -8,19 +8,19 @@
 int main(void)
 {
     // Set pin where on-board LED is connected as output
-    pinMode(LED_GREEN, OUTPUT);
-    digitalWrite(LED_GREEN, HIGH);
+    pinMode(LED_RED, OUTPUT);
+    digitalWrite(LED_RED, HIGH);
 
     // Infinite loop
     while (1)
     {
-        digitalWrite(LED_GREEN, LOW); //I choose to activate the low LED. So I put it low from the start to turn it on.   
+        digitalWrite(LED_RED, LOW); //I choose to activate the low LED. So I put it low from the start to turn it on.   
         _delay_ms(100); //The letter A in Morse code is a short dot and a stripe. I therefore put a short delay of 100 ms.
-        digitalWrite(LED_GREEN, HIGH); //I then turn on the LED.
+        digitalWrite(LED_RED, HIGH); //I then turn on the LED.
         _delay_ms(100); // Short delay
-        digitalWrite(LED_GREEN, LOW); //The LED is turned on but this time if the delay will be longer because the strip is longer than the point. So we set a delay of 500 ms.
+        digitalWrite(LED_RED, LOW); //The LED is turned on but this time if the delay will be longer because the strip is longer than the point. So we set a delay of 500 ms.
         _delay_ms(500); // Long delay
-        digitalWrite(LED_GREEN, HIGH); //Then the LED is turned off after this delay and a slightly longer delay is set before restarting the loop.
+        digitalWrite(LED_RED, HIGH); //Then the LED is turned off after this delay and a slightly longer delay is set before restarting the loop.
         _delay_ms(250); // delay
     }
 
