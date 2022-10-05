@@ -33,4 +33,8 @@ int main(void)
 
 2. Scheme of Morse code application, i.e. connection of AVR device, LED, resistor, and supply voltage. The image can be drawn on a computer or by hand. Always name all components and their values!
 
+<<<<<<< HEAD
    https://raw.githubusercontent.com/MathisNickels/digital-electronics-2/main/lab1-blink_arduino/test/arduino%201.png
+=======
+   https://raw.githubusercontent.com/MathisNickels/digital-electronics-2/main/lab1-blink_arduino/test/arduino%201.png
+>>>>>>> 707be0fe0e33ad54cfdc3d8db7d0adc91899cd05
