@@ -68,12 +68,12 @@
 #define TIM0_overflow_16µs()   TCCR0B &= ~((1<<CS02) | (1<<CS01)); TCCR0B |= (1<<CS00);
 /** @brief Set overflow 128µs, prescaler 010 --> 8 */
 #define TIM0_overflow_128µs()  TCCR0B &= ~((1<<CS02) | (1<<CS00)); TCCR0B |= (1<<CS01);
-/** @brief Set overflow 512µs, prescaler 011 --> 32 */
-#define TIM0_overflow_512µs() TCCR0B &= ~(1<<CS02); TCCR0B |= (1<<CS01) | (1<<CS00);
-/** @brief Set overflow 1ms, prescaler 100 --> 64 */
-#define TIM0_overflow_1ms()    TCCR0B &= ~((1<<CS01) | (1<<CS00)); TCCR0B |= (1<<CS02);
-/** @brief Set overflow 2ms, prescaler // 101 --> 128 */
-#define TIM0_overflow_2ms()    TCCR0B &= ~(1<<CS01); TCCR0B |= (1<<CS22) | (1<<CS20);
+/** @brief Set overflow 1ms, prescaler 011 --> 32 */
+#define TIM0_overflow_1ms() TCCR0B &= ~(1<<CS02); TCCR0B |= (1<<CS01) | (1<<CS00);
+/** @brief Set overflow 4ms, prescaler 100 --> 64 */
+#define TIM0_overflow_4ms()    TCCR0B &= ~((1<<CS01) | (1<<CS00)); TCCR0B |= (1<<CS02);
+/** @brief Set overflow 16ms, prescaler // 101 --> 128 */
+#define TIM0_overflow_16ms()    TCCR0B &= ~(1<<CS01); TCCR0B |= (1<<CS22) | (1<<CS20);
 
 /** @brief Enable overflow interrupt, 1 --> enable */
 #define TIM0_overflow_interrupt_enable()  TIMSK0 |= (1<<TOIE0);
