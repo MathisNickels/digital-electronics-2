@@ -42,7 +42,7 @@ int main(void)
     TIM1_overflow_33ms();
     TIM1_overflow_interrupt_enable();
 
-    TIM0_overflow_16ms();
+    TIM0_overflow_33ms();
     TIM0_overflow_interrupt_enable();
 
     // Enables interrupts by setting the global interrupt mask
@@ -73,7 +73,7 @@ ISR(TIMER1_OVF_vect)
 ISR(TIMER0_OVF_vect)
 {
     static uint8_t no_of_overflows = 0;
-    
+
     no_of_overflows++;
     if (no_of_overflows >= 6)
     {
