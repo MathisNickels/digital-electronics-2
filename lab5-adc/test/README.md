@@ -11,7 +11,7 @@
    | Down   | 1.203&nbsp;V | 246 | 256 | 100 |
    | Left   | 1.9697&nbsp;V | 403 | 409 | 199 |
    | Select | 3.1818&nbsp;V | 650 | 640 | 280 |
-   | none   | 5&nbsp;V | 1023 | 1023 | 1023 |
+   | none   | 5&nbsp;V | 1023 | 1023 | 3ff |
 
 ### Temperature meter
 
