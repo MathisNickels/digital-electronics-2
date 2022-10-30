@@ -90,11 +90,9 @@ ISR(ADC_vect)
     uint16_t value;
     uint16_t number;
     char string[4];  // String for converted numbers by itoa()
-    char string2[3];
     // Read converted value
     // Note that, register pair ADCH and ADCL can be read as a 16-bit value ADC
     value = ADC;
-    number = ADC;
     // Convert "value" to "string" and display it
     itoa(value, string ,10);
     lcd_gotoxy(8,0);
@@ -104,7 +102,7 @@ ISR(ADC_vect)
 
 
 
-    itoa(number, string2, 16);
+    itoa(value, string, 16);
     lcd_gotoxy(13,0);
     lcd_puts("   ");
     lcd_gotoxy(13,0);
