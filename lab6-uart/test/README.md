@@ -16,7 +16,7 @@
    | `Space` | 32 | 0x20 | `0b0010_0000` |
    | `Tab` | 9 | 0x9 | `0b1001` |
    | `Backspace` | 8 | 0x8 | `0b1000` |
-   | `Enter` |  | 0x |  |
+   | `Enter` | 10 and 13 | 0xA and 0xD | `0b1010 and 0b1101` |
 
 ### UART communication
 
