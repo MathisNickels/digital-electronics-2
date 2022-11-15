@@ -10,7 +10,7 @@
    * SPI pins
    * external interrupt pins INT0, INT1
 
-   ![your figure](images/arduino_uno_pinout.png)
+   ![your figure](https://raw.githubusercontent.com/MathisNickels/digital-electronics-2/main/lab7-i2c/test/Arduinoport.png)
 
 ### I2C communication
 
